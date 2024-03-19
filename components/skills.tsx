@@ -23,7 +23,7 @@ const fadeInAnimationVariants = {
 const Skills = () => {
     const { ref } = useSectionInView('Skills', .95)
     return (
-        <section ref={ref} className='mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40'>
+        <section ref={ref} id='skills' className='mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40'>
             <SectionHeading>
                 My Skills
             </SectionHeading>
@@ -36,7 +36,7 @@ const Skills = () => {
                             variants={fadeInAnimationVariants}
                             initial='initial'
                             whileInView="animate"
-                            // viewport={{ once: true }}
+                            viewport={{ once: true }}
                             custom={index}
                         >
                             {skill}
