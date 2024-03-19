@@ -5,9 +5,11 @@ import Link from "next/link";
 import { BsArrowRightShort as BsArrow, BsGithub, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { useSectionInView } from "@/lib/hooks";
+import { useActiveSectionContext } from "@/context/active-section-context";
 
 export default function Intro() {
     const { ref } = useSectionInView('Home', 0.5)
+    const { setActiveSection, setLastClickTime } = useActiveSectionContext()
 
     return (
         <section ref={ref} id="home" className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]">
@@ -60,24 +62,28 @@ export default function Intro() {
                     href='#contact'
                     className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full
                     outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105
-                    transition" >Contact me!<BsArrow className="opacity-60 group-hover:translate-x-1 group-hover:scale-110 transition" />
+                    transition" >Contact me!<BsArrow className="opacity-60 group-hover:translate-x-1 group-hover:scale-110 transition"
+                        onClick={() => {
+                            setActiveSection('Contact')
+                            setLastClickTime(Date.now())
+                        }} />
                 </Link>
 
                 <a
                     href='/resume.pdf' download={true}
                     className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none 
-                    focus:scale-110 hover:scale-110 hover:bg-gray-100 active:scale-105 border border-black/10
+                    focus:scale-110 hover:scale-110 hover:bg-gray-100 active:scale-105 border-black
                     hover:text-gray-950 transition">Download CV <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
                 </a>
 
                 <a href='https://www.linkedin.com/in/mohaiminul-sirat/' target="_blank"
-                    className="bg-white text-gray-700 border border-black/10 p-4 flex items-center gap-2
+                    className="bg-white text-gray-700 border-black p-4 flex items-center gap-2
                      rounded-full outline-none focus:scale-110 hover:scale-[1.15] hover:bg-gray-100
                       hover:text-gray-950 active:scale-105 transition"><BsLinkedin />
                 </a>
 
                 <a href='https://github.com/misirat' target="_blank"
-                    className="bg-white text-gray-700 border border-black/10 p-4 flex items-center
+                    className="bg-white text-gray-700 border-black p-4 flex items-center
                  gap-2 rounded-full outline-none focus:scale-110 hover:scale-[1.15] hover:bg-gray-100
                   hover:text-gray-950 active:scale-105 transition"><BsGithub />
                 </a>
