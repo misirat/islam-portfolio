@@ -25,10 +25,11 @@ const Contact = () => {
                 once: true
             }} >
             <SectionHeading>Contact me</SectionHeading>
-            <p className='text-gray-700 text-center -mt-5'>Feel free to contact me directly or at this email: <a href="mailto:mohaiminul.sirat@gmail.com">mohaiminul.sirat@gmail.com</a>
+            <p className='text-gray-700 text-center -mt-5
+            dark:text-white/80 '>Feel free to contact me directly or at this email: <a href="mailto:mohaiminul.sirat@gmail.com">mohaiminul.sirat@gmail.com</a>
                 {" "} or through the form below: </p>
             <form
-                className='mt-10 flex flex-col'
+                className='mt-10 flex flex-col dark:text-black'
                 action={async (formData) => {
                     const { data, error } = await sendEmail(formData)
                     if (error) {
@@ -39,14 +40,16 @@ const Contact = () => {
                 }}>
                 <input
                     name='senderEmail'
-                    className='h-14 rounded-lg border border-black/10 px-4'
+                    className='h-14 rounded-lg border border-black/10 px-4 dark:bg-white dark:bg-opacity-80
+                    dark:focus:bg-opacity-100 transition-all dark:outline-none'
                     type="email"
                     placeholder='Your email'
                     maxLength={30}
                     required />
                 <textarea
                     name='senderMessage'
-                    className='h-52 my-3 rounded-lg border-black/10 p-4'
+                    className='h-52 my-3 rounded-lg border-black/10 p-4 dark:bg-white dark:bg-opacity-80
+                    dark:focus:bg-opacity-100 transition-all dark:outline-none'
                     placeholder='Your message'
                     required
                     maxLength={1000} />
