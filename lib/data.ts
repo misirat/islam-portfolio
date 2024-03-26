@@ -37,59 +37,47 @@ export const links = [
 
 export const experiencesData = [
     {
-        title: "Graduated bootcamp",
-        location: "Miami, FL",
+        title: "BSc in Computer Science and Engineering",
+        location: "Dhaka, Bangladesh",
         description:
-            "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+            "I graduated with a BSc in Computer Science and Engineering from Ahsanullah Univesity of Science & Technology. I learned the basics of algorithm, data structure, AI, web development. Worked on several group projects with with C, C#, .NET, Java, HTML, CSS and Bootstrap",
         icon: React.createElement(LuGraduationCap),
-        date: "2019",
+        date: "2013-2017",
     },
     {
-        title: "Front-End Developer",
-        location: "Orlando, FL",
+        title: "ASP.NET EF Bootcamp",
+        location: "Dhaka, Bangladesh",
         description:
-            "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+            "I attended a bootcamp on ASP.NET Entity Framework. I learned the basics and advaced aspects of ASP.NET, Entity Framework, SQL Server, C# and LINQ. I worked on a group project of 3 people with ASP.NET, Entity Framework, SQL Server, C#, LINQ, HTML, CSS and Bootstrap, where we developed a university management system.",
         icon: React.createElement(CgWorkAlt),
-        date: "2019 - 2021",
+        date: "2018",
     },
     {
-        title: "Full-Stack Developer",
-        location: "Houston, TX",
+        title: "MS in Computer Science",
+        location: "Paderborn, Germany",
         description:
-            "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+            "I am currently pursuing my MS in Computer Science from Paderborn University. I am learning the advanced topics of computer science like software engineering, web development, algorithms, distributed systems and usable security and privacy. I am nearing the end of my studies and currently looking for an internship or a thesis to wrap up the degree.",
+        icon: React.createElement(LuGraduationCap),
+        date: "2019 - present",
+    },
+    {
+        title: "Frontend Developer at Netzlab GmbH.",
+        location: "Dortmund, Germany",
+        description:
+            "I worked here for one and a half years as a Frontend Developer. I worked on several customer-oriented projects like Express Versand, Gardify, where I implemented features like autocomplete, pagination, sorting, filtering, secure checkout, dynamic page refresh, embedded YouTube video. I worked with Angular, TypeScript, JavaScript, Bootstrap, SCSS, HTML, CSS.",
         icon: React.createElement(FaReact),
-        date: "2021 - present",
+        date: "2022 - 2023",
     },
 ] as const;
 
 export const projectsData = [
-    {
-        title: "CorpComment",
-        description:
-            "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-        tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-        imageUrl: corpcommentImg,
-    },
-    {
-        title: "rmtDev",
-        description:
-            "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-        tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-        imageUrl: rmtdevImg,
-    },
-    {
-        title: "Word Analytics",
-        description:
-            "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-        tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-        imageUrl: wordanalyticsImg,
-    },
     {
         title: "Express Versand",
         description:
             "A public website for price comparison among different shipping service providers. I worked in this project as a Frontend Developer for 1 year. I have implemented features like autocomplete, pagination, sorting, filtering, secure checkout",
         tags: ["React", "JavaScript", "Bootstrap", "CSS"],
         imageUrl: expressversandImg,
+        href: "https://expressversand.de",
     },
     {
         title: "Gardify",
@@ -97,7 +85,30 @@ export const projectsData = [
             "A public website for gardening and its maintenance. I worked in this project as a Frontend Developer for 6 months. It has features like autocomplete, dynamic page refresh, embedded YouTube video, sorting, filtering, secure checkout, ",
         tags: ["Angular", "TypeScript", "Bootstrap", "SCSS"],
         imageUrl: gardifyImg,
+        href: "https://gardify.de",
     },
+    // {
+    //     title: "CorpComment",
+    //     description:
+    //         "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
+    //     tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+    //     imageUrl: corpcommentImg,
+    // },
+    // {
+    //     title: "rmtDev",
+    //     description:
+    //         "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
+    //     tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+    //     imageUrl: rmtdevImg,
+    // },
+    // {
+    //     title: "Word Analytics",
+    //     description:
+    //         "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
+    //     tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+    //     imageUrl: wordanalyticsImg,
+    // },
+
 ] as const;
 
 export const skillsData = [

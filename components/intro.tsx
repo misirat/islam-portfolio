@@ -62,7 +62,7 @@ export default function Intro() {
                     href='#contact'
                     className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full
                     outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105
-                    transition" >Contact me!<BsArrow className="opacity-60 group-hover:translate-x-1 group-hover:scale-110 transition"
+                    transition" >Contact me!<BsArrow className="opacity-60 group-hover:translate-x-1 group-hover:scale-110 transition-all"
                         onClick={() => {
                             setActiveSection('Contact')
                             setLastClickTime(Date.now())
@@ -73,19 +73,19 @@ export default function Intro() {
                     href='/resume.pdf' download={true}
                     className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none 
                     focus:scale-110 hover:scale-110 hover:bg-gray-100 active:scale-105 border-black
-                    hover:text-gray-950 transition dark:bg-white/10">Download CV <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
+                    hover:text-gray-950 dark:hover:text-white/90 dark:bg-white/10 dark:hover:bg-black/50 transition-all">Download CV <HiDownload className="opacity-60 group-hover:translate-y-1 dark:group-hover:text-white/90 transition" />
                 </a>
 
                 <a href='https://www.linkedin.com/in/mohaiminul-sirat/' target="_blank"
                     className="bg-white text-gray-700 border-black p-4 flex items-center gap-2
-                     rounded-full outline-none focus:scale-110 hover:scale-[1.15] hover:bg-gray-100
-                      hover:text-gray-950 active:scale-105 transition dark:bg-white/10 dark:text-white/60"><BsLinkedin />
+                     rounded-full outline-none focus:scale-110 hover:scale-[1.15] hover:bg-gray-100 dark:hover:bg-black/50
+                      hover:text-gray-950 active:scale-105  dark:bg-white/10 dark:text-white/60 dark:hover:text-white/90 transition-all"><BsLinkedin />
                 </a>
 
                 <a href='https://github.com/misirat' target="_blank"
                     className="bg-white text-gray-700 border-black p-4 flex items-center
-                 gap-2 rounded-full outline-none focus:scale-110 hover:scale-[1.15] hover:bg-gray-100
-                  hover:text-gray-950 active:scale-105 transition dark:bg-white/10 dark:text-white/60"><BsGithub />
+                 gap-2 rounded-full outline-none focus:scale-110 hover:scale-[1.15] hover:bg-gray-100 dark:hover:bg-black/50
+                  hover:text-gray-950 active:scale-105 dark:bg-white/10 dark:text-white/60 dark:hover:text-white/90 transition-all"><BsGithub />
                 </a>
             </motion.div>
         </section>
