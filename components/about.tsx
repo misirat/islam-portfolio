@@ -15,13 +15,11 @@ const About = () => {
             transition={{ delay: 0.175 }}
             id="about" >
             <SectionHeading>About me</SectionHeading>
-            <p className="mb-3">In the big world of computers, I'm almost done with my Master's degree in Computer Science. I love making websites look awesome, especially with CSS and JavaScript, and React is my favorite tool.</p>
+            <p className="mb-3">In the big world of computers, I'm almost done with my Master's degree in Computer Science. I love making websites look awesome, and playing with CSS and JavaScript; of course React is my favorite tool.</p>
 
             <p>I spend a lot of time learning from Kevin Powell's videos and taking on design challenges from frontendmentor.io. When React said Next.js is cool, I jumped on board to learn it too.</p>
 
-            <p>Outside of coding, I'm a huge fan of soccer, tennis, and badminton. I also enjoy taking pictures of stars, and I like playing video games.</p>
-
-            <p>Come check out my portfolio! It's where my love for tech and creativity come together in simple, cool projects.</p>
+            <p>Outside of coding, I'm a huge fan of football, tennis, and badminton. I also enjoy taking pictures of stars and nightscapes, and I like playing video games.</p>
 
         </motion.section>
     )

@@ -12,7 +12,8 @@ const Project = ({
     title,
     description,
     tags,
-    imageUrl
+    imageUrl,
+    href
 }: ProjectProps) => {
     const ref = useRef<HTMLDivElement>(null)
     const { scrollYProgress } = useScroll({
@@ -30,6 +31,7 @@ const Project = ({
             }}
             className='group mb-3 sm:mb-8 last:mb-0' >
             <section
+                onClick={() => window.open(href, '_blank')}
                 className='bg-gray-100 max-w-[42rem] border border-black/5 overflow-hidden
                  sm:pr-8 relative sm:max-h-[30rem] sm:group-even:pl-8 rounded-lg
                  hover:bg-gray-200 hover:scale-105 cursor-pointer transition

@@ -2,11 +2,10 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
 import expressversandImg from "@/public/expversand.png";
 import gardifyImg from "@/public/gardify.png";
+import plotforgeImg from "@/public/plotforge.png";
 
 export const links = [
     {
@@ -74,7 +73,7 @@ export const projectsData = [
     {
         title: "Express Versand",
         description:
-            "A public website for price comparison among different shipping service providers. I worked in this project as a Frontend Developer for 1 year. I have implemented features like autocomplete, pagination, sorting, filtering, secure checkout",
+            "A public website for price comparison among different shipping service providers. I worked in this project as a Frontend Developer for 1 year. I have implemented features like autocomplete, pagination, sorting, filtering, secure checkout.",
         tags: ["React", "JavaScript", "Bootstrap", "CSS"],
         imageUrl: expressversandImg,
         href: "https://expressversand.de",
@@ -82,11 +81,20 @@ export const projectsData = [
     {
         title: "Gardify",
         description:
-            "A public website for gardening and its maintenance. I worked in this project as a Frontend Developer for 6 months. It has features like autocomplete, dynamic page refresh, embedded YouTube video, sorting, filtering, secure checkout, ",
+            "A public website for gardening and its maintenance. I worked in this project as a Frontend Developer for 6 months. It has features like autocomplete, dynamic page refresh, embedded YouTube video, sorting, filtering, secure checkout.",
         tags: ["Angular", "TypeScript", "Bootstrap", "SCSS"],
         imageUrl: gardifyImg,
         href: "https://gardify.de",
     },
+    {
+        title: "Plotforge",
+        description:
+            "A full stack project done using Next.js, React and tailwind. It can be used as a dictionary of AI prompts. It has advanced CRUD features, can be authenticated using google auth, shows persistent data using mongoDB.",
+        tags: ["Next.js", "React", "JavaScripts", "TailwindCSS", "MongoDB", "Google Auth"],
+        imageUrl: plotforgeImg,
+        href: "https://plotforge-ai-prompt.vercel.app/",
+    },
+
     // {
     //     title: "CorpComment",
     //     description:
